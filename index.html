@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="groceryApp">
 <head>
     <meta charset="UTF-8">
     <title>The Grocery Getter App | Steve Gardner</title>
@@ -7,11 +7,12 @@
 </head>
 <body>
     <div class="container">
-        <header ui-view="header"></header>
+        <div ui-view="header"></div>
+        <div ui-view="body"></div>
     </div>
 
-  	<script src="assets/lib/angular.min.js"></script>
-  	<script src="assets/lib/angular-ui-router.min.js"></script>
+  	<script src="assets/lib/angular.js"></script>
+  	<script src="assets/lib/angular-ui-router.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
