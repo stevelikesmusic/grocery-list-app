@@ -18,7 +18,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 
     $stateProvider.state('trip', {
-      url: '/build',
+      url: '/trip',
       views: {
         'header': {
           templateUrl: 'shared/header/header.html',
@@ -27,8 +27,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
         },
         'body': {
           templateUrl: 'components/trip-list/trip.html',
-         // controller: 'HomeController',
-         // controllerAs: 'home'
+          controller: 'PlanTripController',
+          controllerAs: 'trip'
         }
       }
     });

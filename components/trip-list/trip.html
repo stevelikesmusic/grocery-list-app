@@ -1,2 +1,18 @@
 <h1>Weekly List</h1>
 <h4>Add items for the weekly haul</h4>
+
+<div>
+  <h3>What do you need?</h3>
+  <form ng-submit="trip.PlanTripFactory.addItem()">
+    <input type="number" ng-model="trip.PlanTripFactory.itemAmount" placeholder="How many?">
+    <input type="text" ng-model="trip.PlanTripFactory.itemUnit" placeholder="Unit?">
+    <input type="text" ng-model="trip.PlanTripFactory.itemName" placeholder= "What's it called?">    
+    <button type="submit">Add it!</button>
+  </form>
+</div>
+<div>
+  <h4>Here's what I'm getting</h4>
+  <ul>
+    <li ng-repeat="item in trip.list">{{ item.amount }} {{ item.unit }} of {{ item.name }}</li>
+  </ul>
+</div>
