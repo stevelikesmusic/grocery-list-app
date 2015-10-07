@@ -1,0 +1,42 @@
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header {
+  width: 100%;
+  background: tomato;
+}
+
+.main, .aside {
+  flex: 1 auto;
+}
+  
+.main {
+  background: gold;
+}
+
+.aside {
+  max-width: 15%;
+  font-size: 60px;
+  background: skyblue;
+  padding-top: 8%;
+  padding-left: .5%;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 94vh;
+}
